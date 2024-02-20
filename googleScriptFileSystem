@@ -1,0 +1,9 @@
+function doGet() {
+  return HtmlService.createHtmlOutputFromFile('Index');
+}
+
+function uploadFile(file) {
+  // This function would handle file uploads
+  console.log('File name: ' + file.getName());
+  return 'File uploaded: ' + file.getName();
+}
